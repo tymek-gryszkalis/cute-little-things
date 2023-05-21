@@ -77,14 +77,22 @@
             },
             {
                 "backgroundImage": null,
-                "colorScheme": "Campbell",
+                "colorScheme": "Matrix",
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "cursorShape": "filledBox",
                 "elevate": true,
-                "experimental.retroTerminalEffect": false,
+                "experimental.retroTerminalEffect": true,
+                "font": 
+                {
+                    "face": "GohuFont uni-11 Nerd Font",
+                    "size": 20.0,
+                    "weight": "bold"
+                },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt",
-                "opacity": 70,
+                "opacity": 100,
+                "padding": "15",
                 "useAcrylic": true
             },
             {
@@ -104,6 +112,7 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "cursorShape": "bar",
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
                 "name": "Ubuntu",
@@ -186,6 +195,29 @@
             "purple": "#881798",
             "red": "#C50F1F",
             "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
+        },
+        {
+            "background": "#000000",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#119609",
+            "cyan": "#3A96DD",
+            "foreground": "#16C60C",
+            "green": "#13A10E",
+            "name": "Matrix",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#074204",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
         },
