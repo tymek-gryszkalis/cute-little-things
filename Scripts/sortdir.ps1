@@ -1,0 +1,1 @@
+Python $env:USERPROFILE/.bin/sortdir.py $args
