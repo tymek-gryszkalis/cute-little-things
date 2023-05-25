@@ -4,7 +4,7 @@ oh-my-posh init pwsh | Invoke-Expression
 # Load prompt config
 function Get-ScriptDirectory { Split-Path $MyInvocation.ScriptName }
 $PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) 'tg.omp.json'
-oh-my-posh --init --shell PS --config ~/.config/powershell/tg.omp.json | Invoke-Expression
+oh-my-posh --init --shell PS --config $PROMPT_CONFIG | Invoke-Expression
 
 # Alias
 Set-Alias vim nvim
