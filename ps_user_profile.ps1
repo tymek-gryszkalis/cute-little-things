@@ -3,6 +3,9 @@ function Get-ScriptDirectory { Split-Path $MyInvocation.ScriptName }
 $PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) 'tg.omp.json'
 oh-my-posh init pwsh --config $PROMPT_CONFIG | Invoke-Expression
 
+# Icons
+Import-Module Terminal-Icons
+
 # Alias
 Set-Alias vim nvim
 Set-Alias ll ls
