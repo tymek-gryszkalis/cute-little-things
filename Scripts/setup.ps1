@@ -112,14 +112,14 @@ br
 Write-Host "Now I'm gonna import some user configs."
 Write-Host "Importing config from github."
 mkdir ~/.config/powershell -Force | out-null
-Invoke-WebRequest "https://raw.githubusercontent.com/tymek-gryszkalis/cute-little-things/main/ps_user_profile.ps1" -Headers @{"Cache-Control"="no-cache"} -OutFile ~/.config/powershell/user_profile.ps1
+Invoke-WebRequest "https://raw.githubusercontent.com/tymek-gryszkalis/cute-little-things/main/Settings/ps_user_profile.ps1" -Headers @{"Cache-Control"="no-cache"} -OutFile ~/.config/powershell/user_profile.ps1
 mkdir ~/Documents/PowerShell -Force | out-null
 New-Item $PROFILE.CurrentUserCurrentHost -Force | out-null
 Set-Content $PROFILE.CurrentUserCurrentHost ". $env:USERPROFILE/.config/powershell/user_profile.ps1"
 prettyCom -contents "PS User Profile setup!" -type "success"
 Write-Host "Importing terminal config from github."
 rm ~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
-Invoke-WebRequest "https://raw.githubusercontent.com/tymek-gryszkalis/cute-little-things/main/terminal_settings.json" -Headers @{"Cache-Control"="no-cache"} -OutFile ~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+Invoke-WebRequest "https://raw.githubusercontent.com/tymek-gryszkalis/cute-little-things/main/Settings/terminal_settings.json" -Headers @{"Cache-Control"="no-cache"} -OutFile ~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 prettyCom -contents "Terminal settings setup!" -type "success"
 
 br
@@ -231,7 +231,7 @@ br
 # Oh My Posh
 Write-Host "Let's make it pretty. Oh My Posh time!"
 scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
-Invoke-WebRequest "https://raw.githubusercontent.com/tymek-gryszkalis/cute-little-things/main/tg.omp.json" -Headers @{"Cache-Control"="no-cache"} -OutFile ~/.config/powershell/tg.omp.json
+Invoke-WebRequest "https://raw.githubusercontent.com/tymek-gryszkalis/cute-little-things/main/Settings/tg.omp.json" -Headers @{"Cache-Control"="no-cache"} -OutFile ~/.config/powershell/tg.omp.json
 . $PROFILE
 prettyCom -contents "Oh My Posh" -type "installed"
 cd ~/.config/powershell
