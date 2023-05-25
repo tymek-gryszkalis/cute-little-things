@@ -1,3 +1,6 @@
+# Prompt
+oh-my-posh init pwsh | Invoke-Expression
+
 # Alias
 Set-Alias vim nvim
 Set-Alias ll ls
