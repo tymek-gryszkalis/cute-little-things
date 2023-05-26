@@ -28,3 +28,6 @@ Set-Alias ll ls
 Set-Alias .. cd..
 Set-Alias g git
 Set-Alias grep findstr
+Set-Alias volt volt.bat
+Set-Alias sortdir sortdir.ps1
+Set-Alias colors listcolors.ps1
