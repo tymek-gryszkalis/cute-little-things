@@ -1,0 +1,9 @@
+Host bert
+    User tg
+    HostName bert.fork.pl
+Host volt
+    User gryszkat
+    HostName volt.zet.pw.edu.pl
+Host vol
+    User gryszkat
+    HostName vol.zet.pw.edu.pl
