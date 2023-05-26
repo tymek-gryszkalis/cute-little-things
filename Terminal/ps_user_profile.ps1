@@ -31,3 +31,4 @@ Set-Alias grep findstr
 Set-Alias volt volt.bat
 Set-Alias sortdir sortdir.ps1
 Set-Alias colors listcolors.ps1
+Set-Alias upcon updateConfig.ps1
