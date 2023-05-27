@@ -39,6 +39,7 @@ function jbfoo {
     cd -
   } else {
     Write-Host "Oops! You have to put the AoC repository in your computer!"
+    Write-Host "https://github.com/tymek-gryszkalis/advent-of-code" -ForegroundColor cyan
   }
 }
 Set-Alias jingle-bells jbfoo
