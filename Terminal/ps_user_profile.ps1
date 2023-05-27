@@ -33,11 +33,11 @@ Set-Alias sortdir sortdir.ps1
 Set-Alias colors listcolors.ps1
 Set-Alias upcon updateConfig.ps1
 function jbfoo {
-  try {
+  if (Test-Path -Path ~/coding/Repos/advent-of-code) {
     cd ~/coding/Repos/advent-of-code
     code .
     cd -
-  } catch {
+  } else {
     Write-Host "Oops! You have to put the AoC repository in your computer!"
   }
 }
