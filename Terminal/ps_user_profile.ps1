@@ -33,8 +33,12 @@ Set-Alias sortdir sortdir.ps1
 Set-Alias colors listcolors.ps1
 Set-Alias upcon updateConfig.ps1
 function jbfoo {
-  cd ~/coding/Repos/advent-of-code
-  code .
-  cd -
+  try {
+    cd ~/coding/Repos/advent-of-code
+    code .
+    cd -
+  } catch {
+    Write-Host "Oops! You have to put the AoC repository in your computer!"
+  }
 }
 Set-Alias jingle-bells jbfoo
